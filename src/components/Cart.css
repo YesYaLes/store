@@ -1,0 +1,108 @@
+.Cart {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: fixed;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  height: 70%;
+  background-color: aliceblue;
+  animation: ani 1s forwards;
+  transform: translateX(200vh);
+  word-wrap: break-word;
+  z-index: 2;
+}
+@keyframes ani {
+  0% {
+    transform: translateX(200vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.CartMod {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: fixed;
+  top: 150px;
+  left: 150px;
+  right: 150px;
+  height: 70%;
+  background-color: aliceblue;
+  animation: ani1 1s forwards;
+  transform: translateX(200vh);
+  word-wrap: break-word;
+  z-index: 2;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+@keyframes ani1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200vh);
+  }
+}
+
+.CloseBtn {
+  font-size: 20px;
+  margin: 10px;
+  float: right;
+  border-radius: 10px;
+  border: 2px solid black;
+  -webkit-transition: 0.3s ease;
+}
+.CloseBtn:hover {
+  transition: 0.3s;
+  background-color: rgb(226, 84, 84);
+}
+h3 {
+  margin: 3px;
+}
+
+.CartLbl {
+  margin-top: 10px;
+  margin-left: 47%;
+  font-size: 30px;
+  display: block;
+  width: 85%;
+  float: left;
+  font-weight: bold;
+}
+
+.Information {
+  display: inline-block;
+  position: absolute;
+  background-color: silver;
+  border-radius: 10px;
+  width: 38.2%;
+  height: 97%;
+  top: 10px;
+  left: 59%;
+  z-index: 1;
+}
+.CartBlock {
+  border: 3px solid rgb(173, 173, 173);
+  width: 57.3%;
+  height: 96.4%;
+  border-radius: 10px;
+  top: 10px;
+  position: fixed;
+  margin-left: 10px;
+  display: inline-block;
+  background-color: rgb(197, 197, 197);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.back {
+  display: inline-block;
+  position: absolute;
+  background-color: silver;
+  border-radius: 10px;
+  width: 40.5%;
+  height: 92%;
+  top: 45px;
+  left: 59%;
+}

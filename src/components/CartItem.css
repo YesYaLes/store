@@ -1,0 +1,47 @@
+.CartItem {
+  display: inline-block;
+  margin: 8px;
+  margin-left: 15px;
+  position: relative;
+  float: left;
+
+  height: 35%;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+  width: 22%;
+}
+
+.Name {
+  width: 100%;
+  position: absolute;
+  font-size: 30px;
+  display: inline-block;
+  text-align: center;
+}
+
+.Cost {
+  position: absolute;
+  font-size: 20px;
+  left: 10px;
+  top: 75%;
+  display: inline-block;
+}
+.DelBtn {
+  position: absolute;
+  top: 77%;
+  left: 70%;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(123, 188, 207);
+  -webkit-transition: 0.3s ease;
+}
+.DelBtn:hover {
+  background-color: rgb(212, 112, 95);
+  transition: 0.3s;
+}
+.Pic {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+}

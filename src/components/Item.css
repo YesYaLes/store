@@ -1,0 +1,41 @@
+.Item {
+  text-align: center;
+  border-radius: 5px;
+  width: 19.4%;
+  height: 20%;
+  margin: 5px;
+  display: inline-block;
+  background-color: #ffffff;
+  -webkit-transition: 0.2s ease;
+}
+.Item:hover {
+  background-color: #f7f7f7;
+  transition: 0.2s;
+}
+.NameOfItem {
+  margin-top: 10px;
+  font-size: 25px;
+}
+.ButtonBuy {
+  padding: 8px;
+  margin-top: auto;
+  margin-bottom: 1%;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  background-color: rgb(194, 240, 240);
+  -webkit-transition: 0.3s ease;
+}
+
+.ButtonBuy:hover {
+  background-color: rgb(230, 207, 79);
+  transition: 0.3s;
+}
+.Image {
+  margin-top: 10px;
+  width: 65%;
+  height: 55%;
+}
+.CostLbl {
+  margin-top: auto;
+}
