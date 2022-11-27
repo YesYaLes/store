@@ -13,16 +13,14 @@ const Item = (props) => {
         dispatch({ type: "PushToCartList", memb: ItemList[i] });
       }
     }
-    const par = event.target.parentElement.parentElement;
-    const cart =
-      par.previousElementSibling.previousElementSibling.previousElementSibling;
+    const par = event.target.parentElement.parentElement.parentElement.children;
     if (CartVisibility === false) {
       document.body.style.overflowY = "hidden";
-      cart.style.display = "block";
-      cart.className = "Cart";
-      par.previousElementSibling.previousElementSibling.className = "MenuBlur";
-      par.previousElementSibling.className = "ToolBarBlur";
-      par.className = "ItemListBlur";
+      par.item(0).style.display = "block";
+      par.item(0).className = "Cart";
+      par.item(2).className = "MenuBlur";
+      par.item(3).className = "ToolBarBlur";
+      par.item(4).className = "ItemListBlur";
       dispatch({ type: "ChangeCartVisibility" });
     }
   };

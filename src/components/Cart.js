@@ -6,18 +6,16 @@ const Cart = () => {
   const CartList = useSelector((state) => state.ItemsInCart);
   const dispatch = useDispatch();
   const CLoseModal = (event) => {
-    const par = event.target.parentElement;
-
-    par.nextElementSibling.className = "Menu";
-    par.nextElementSibling.nextElementSibling.className = "ToolBar";
-    par.nextElementSibling.nextElementSibling.nextElementSibling.className =
-      "ItemList";
+    const par = event.target.parentElement.parentElement.children;
+    par.item(2).className = "Menu";
+    par.item(3).className = "ToolBar";
+    par.item(4).className = "ItemList";
     dispatch({ type: "ChangeCartVisibility" });
-    par.className = "CartMod";
-    par.nextElementSibling.style.pointerEvents = "none";
+    par.item(0).className = "CartMod";
+    par.item(2).style.pointerEvents = "none";
     setTimeout(() => {
-      par.style.display = "none";
-      par.nextElementSibling.style.pointerEvents = "auto";
+      par.item(0).style.display = "none";
+      par.item(2).style.pointerEvents = "auto";
       document.body.style.overflow = "auto";
     }, 750);
   };
@@ -29,7 +27,7 @@ const Cart = () => {
   return (
     <Fragment>
       <div style={{ display: "none" }} className="Cart">
-        <button className="CloseBtn" onClick={CLoseModal}>
+        <button className="CloseBtnCart" onClick={CLoseModal}>
           X
         </button>
 

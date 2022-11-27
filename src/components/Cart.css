@@ -46,7 +46,7 @@
   }
 }
 
-.CloseBtn {
+.CloseBtnCart {
   font-size: 20px;
   margin: 10px;
   float: right;
@@ -54,7 +54,7 @@
   border: 2px solid black;
   -webkit-transition: 0.3s ease;
 }
-.CloseBtn:hover {
+.CloseBtnCart:hover {
   transition: 0.3s;
   background-color: rgb(226, 84, 84);
 }

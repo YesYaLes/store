@@ -4,14 +4,17 @@ import Menu from "./components/Menu";
 import ItemList from "./components/ItemList";
 import Cart from "./components/Cart";
 import ToolBar from "./components/ToolBar";
+import Login from "./components/Login";
+
 const App = () => {
   return (
-    <Fragment>
+    <div>
       <Cart />
+      <Login />
       <Menu />
       <ToolBar />
       <ItemList />
-    </Fragment>
+    </div>
   );
 };
 export default App;

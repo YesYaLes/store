@@ -14,11 +14,12 @@ h1 {
 
 .CartBtn {
   margin: 10px;
-  float: right;
+  position: absolute;
+  right: 60px;
   padding: 0;
   border-radius: 10px;
   padding: 3px;
-  background-color: azure;
+  background-color: white;
   align-self: auto;
   -webkit-transition: 0.3s ease;
 }
@@ -41,13 +42,13 @@ h1 {
   z-index: 1;
 }
 .NumberOfItems {
+  position: absolute;
+  top: 33px;
+  right: 130px;
   padding: 5px;
   width: 10px;
   border-radius: 10px;
-
   background-color: rgb(255, 243, 79);
-  margin-top: 30px;
-  float: right;
 }
 .NameLbl {
   margin-left: 20px;
@@ -77,6 +78,23 @@ h1 {
 }
 
 .SearchBtn:hover {
+  background-color: rgb(230, 207, 79);
+  transition: 0.3s;
+}
+
+.PrvtOff {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: white;
+  align-self: auto;
+  -webkit-transition: 0.3s ease;
+}
+
+.PrvtOff:hover {
   background-color: rgb(230, 207, 79);
   transition: 0.3s;
 }

@@ -53,6 +53,19 @@ const StoreReducer = (
     curFromVal: 0,
     curTillVal: 0,
     FilteredItemList: [],
+    AuthData: [
+      {
+        Name: "Sasha",
+        Surname: "Lisovyi",
+        Login: "yesyales04@gmail.com",
+        Password: "H29lgt471zXm03",
+        ID: Math.random(),
+        PicSrc:
+          "https://i.pinimg.com/736x/c6/25/90/c62590c1756680060e7c38011cd704b5.jpg",
+      },
+    ],
+    IsLoged: false,
+    Pic: null,
   },
   action
 ) => {
@@ -80,6 +93,12 @@ const StoreReducer = (
     }
     case "FilterList": {
       return { ...state, FilteredItemList: [...action.arr] };
+    }
+    case "LogIn": {
+      return { ...state, IsLoged: true };
+    }
+    case "SetPic": {
+      return { ...state, Pic: action.value };
     }
     default:
       return state;

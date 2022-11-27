@@ -2,25 +2,40 @@ import React, { Fragment } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import "./Menu.css";
 import cart from "./3081822.png";
+import prvt from "./images.png";
 
 const Menu = () => {
   const CartVisibility = useSelector((state) => state.CartVisible);
   const CartList = useSelector((state) => state.ItemsInCart);
   const ItemList = useSelector((state) => state.FilteredItemList);
+  const Logged = useSelector((state) => state.IsLoged);
+  const pic = useSelector((state) => state.Pic);
   const dispatch = useDispatch();
 
-  const VisibilityHandler = (event) => {
-    console.log(CartList);
-    const par = event.target.parentElement;
+  const CartVisibilityHandler = (event) => {
+    const par = event.target.parentElement.parentElement.children;
     if (CartVisibility === false) {
       document.body.style.overflowY = "hidden";
+      par.item(0).style.display = "block";
+      par.item(0).className = "Cart";
+      par.item(2).className = "MenuBlur";
+      par.item(2).style.pointerEvents = "none";
+      par.item(3).className = "ToolBarBlur";
+      par.item(4).className = "ItemListBlur";
 
-      par.previousElementSibling.style.display = "block";
-
-      par.previousElementSibling.className = "Cart";
-      par.className = "MenuBlur";
-      par.nextElementSibling.className = "ToolBarBlur";
-      par.nextElementSibling.nextElementSibling.className = "ItemListBlur";
+      dispatch({ type: "ChangeCartVisibility" });
+    }
+  };
+  const LoginVisibilityHandler = (event) => {
+    const par = event.target.parentElement.parentElement.children;
+    if (CartVisibility === false) {
+      document.body.style.overflowY = "hidden";
+      par.item(1).style.display = "block";
+      par.item(1).className = "Login";
+      par.item(2).className = "MenuBlur";
+      par.item(2).style.pointerEvents = "none";
+      par.item(3).className = "ToolBarBlur";
+      par.item(4).className = "ItemListBlur";
       dispatch({ type: "ChangeCartVisibility" });
     }
   };
@@ -45,15 +60,23 @@ const Menu = () => {
         <button className="SearchBtn" onClick={Search}>
           Search
         </button>
+        <label className="NumberOfItems">{CartList.length}</label>
+        <img
+          src={Logged ? pic : prvt}
+          alt="Cart"
+          width="45"
+          height="45"
+          className="PrvtOff"
+          onClick={Logged ? console.log(Logged) : LoginVisibilityHandler}
+        />
         <img
           src={cart}
           alt="Cart"
           width="45"
           height="45"
           className="CartBtn"
-          onClick={VisibilityHandler}
+          onClick={CartVisibilityHandler}
         />
-        <label className="NumberOfItems">{CartList.length}</label>
       </div>
     </Fragment>
   );
