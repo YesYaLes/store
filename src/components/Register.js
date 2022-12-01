@@ -21,7 +21,7 @@ const Register = () => {
       par.item(9).value !== "" &&
       par.item(11).value !== ""
     ) {
-      if (par.item(4).value === par.item(5).value) {
+      if (par.item(7).value === par.item(9).value) {
         NewAcc = {
           Name: par.item(1).value,
           Surname: par.item(2).value,
@@ -31,8 +31,8 @@ const Register = () => {
           PicSrc: par.item(6).value,
         };
         dispatch({ type: "PushToAuthData", memb: NewAcc });
-        par.item(7).style.backgroundColor = "green";
-        par.item(7).textContent = "Succes";
+        par.item(13).style.backgroundColor = "green";
+        par.item(13).textContent = "Succes";
         setTimeout(() => {
           history.push("/store");
         }, 3000);
