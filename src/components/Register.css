@@ -1,0 +1,58 @@
+.Register {
+  width: 100%;
+  position: relative;
+  top: 77px;
+  background-color: rgb(226, 226, 226);
+  height: 100vh;
+}
+.RegisterBlur {
+  width: 100%;
+  position: relative;
+  top: 57px;
+  background-color: rgb(226, 226, 226);
+  height: 100vh;
+  filter: blur(4px) brightness(0.7);
+  pointer-events: none;
+}
+.RegLbl {
+  width: 100%;
+  text-align: center;
+}
+
+.InputReg {
+  margin-left: 40%;
+  display: inline-block;
+  padding: 3px;
+  margin-top: 80px;
+  width: 20%;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 2px white;
+  box-shadow: 0px 1px 5px black;
+  outline: 0px;
+}
+.BTN {
+  display: block;
+  width: 20%;
+  margin: auto;
+  margin-top: 40px;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 7px;
+  border: none;
+  background-color: azure;
+  -webkit-transition: 0.3s ease;
+}
+
+.BTN:hover {
+  background-color: rgb(230, 207, 79);
+  transition: 0.3s;
+}
+
+.LblCaut {
+  font-weight: bold;
+  font-size: 20px;
+  display: none;
+  margin-left: 15px;
+  width: 15%;
+}

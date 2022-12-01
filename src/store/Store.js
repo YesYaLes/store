@@ -65,6 +65,7 @@ const StoreReducer = (
       },
     ],
     IsLoged: false,
+    RegInProcess: false,
     Pic: null,
   },
   action
@@ -99,6 +100,12 @@ const StoreReducer = (
     }
     case "SetPic": {
       return { ...state, Pic: action.value };
+    }
+    case "RegProcess": {
+      return { ...state, RegInProcess: !state.RegInProcess };
+    }
+    case "PushToAuthData": {
+      return { ...state, AuthData: [...state.AuthData, action.memb] };
     }
     default:
       return state;

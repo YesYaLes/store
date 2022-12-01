@@ -1,8 +1,10 @@
 import React, { Fragment } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { useHistory } from "react-router-dom";
 import "./Login.css";
 const Login = () => {
   const dispatch = useDispatch();
+  const history = useHistory();
   const AuthData = useSelector((state) => state.AuthData);
   const CLoseModal = (event) => {
     const par = event.target.parentElement.parentElement.children;
@@ -58,6 +60,21 @@ const Login = () => {
       }
     });
   };
+  const EnterReg = (event) => {
+    dispatch({ type: "RegProcess" });
+    const par = event.target.parentElement.parentElement.children;
+    par.item(2).className = "Menu";
+    par.item(3).className = "ToolBar";
+    par.item(4).className = "ItemList";
+    par.item(1).className = "LoginMod";
+    par.item(2).style.pointerEvents = "none";
+    setTimeout(() => {
+      par.item(1).style.display = "none";
+      par.item(2).style.pointerEvents = "auto";
+      document.body.style.overflow = "auto";
+      history.push("/register");
+    }, 500);
+  };
   return (
     <Fragment>
       <div style={{ display: "none" }} className="Login">
@@ -81,7 +98,9 @@ const Login = () => {
           Continue{" "}
         </button>
         <label className="LblReg">Haven`t got account?</label>
-        <button className="BtnReg">Register</button>
+        <button className="BtnReg" onClick={EnterReg} to="/register">
+          Register
+        </button>
       </div>
     </Fragment>
   );

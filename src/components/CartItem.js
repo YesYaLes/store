@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import "./CartItem.css";
-import trash from "./6182628.png";
+import trash from "../images/6182628.png";
 const CartItem = (props) => {
   const CartList = useSelector((state) => state.ItemsInCart);
   const dispatch = useDispatch();

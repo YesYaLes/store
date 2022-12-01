@@ -1,8 +1,7 @@
 .ToolBar {
-  margin-top: auto;
   position: fixed;
   width: 10%;
-  margin-top: 77px;
+  top: 77px;
   background-color: rgb(206, 206, 206);
   height: 150vh;
   z-index: 0;
@@ -11,7 +10,7 @@
   z-index: 1;
 }
 .ToolBarBlur {
-  margin-top: 77px;
+  top: 77px;
   position: fixed;
   width: 10%;
   background-color: rgb(184, 184, 184);

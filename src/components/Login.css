@@ -2,9 +2,9 @@
   border-radius: 10px;
   border: 2px solid rgb(150, 150, 150);
   position: fixed;
-  top: 150px;
-  left: 650px;
-  right: 650px;
+  top: 17%;
+  left: 35%;
+  right: 35%;
   height: 60%;
   background-color: aliceblue;
   animation: ani2 1s forwards;
@@ -25,9 +25,9 @@
   border-radius: 10px;
   border: 2px solid rgb(150, 150, 150);
   position: fixed;
-  top: 150px;
-  left: 650px;
-  right: 650px;
+  top: 17%;
+  left: 35%;
+  right: 35%;
   height: 70%;
   background-color: aliceblue;
   animation: ani3 1s forwards;
@@ -176,4 +176,16 @@
   100% {
     transform: translate(1px, -2px) rotate(-1deg);
   }
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
 }

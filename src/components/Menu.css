@@ -1,5 +1,6 @@
 .Menu {
   position: fixed;
+  top: 0%;
   display: inline-block;
   background-color: rgb(117, 193, 223);
   width: 100%;
@@ -60,7 +61,7 @@ h1 {
   padding: 3px;
   margin: 10px;
   margin-top: 25px;
-  margin-left: 35%;
+  margin-left: 28%;
   width: 20%;
   font-size: 20px;
   border-radius: 5px;

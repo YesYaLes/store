@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
+import { Route } from "react-router-dom";
 import "./App.css";
 import Menu from "./components/Menu";
 import ItemList from "./components/ItemList";
 import Cart from "./components/Cart";
 import ToolBar from "./components/ToolBar";
 import Login from "./components/Login";
+import Register from "./components/Register";
 
 const App = () => {
   return (
@@ -12,8 +14,14 @@ const App = () => {
       <Cart />
       <Login />
       <Menu />
-      <ToolBar />
-      <ItemList />
+
+      <Route path="/store">
+        <ToolBar />
+        <ItemList />
+      </Route>
+      <Route path="/register">
+        <Register />
+      </Route>
     </div>
   );
 };
