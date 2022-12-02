@@ -1,58 +1,275 @@
-.Cart {
-  border-radius: 10px;
-  border: 2px solid black;
-  position: fixed;
-  top: 150px;
-  left: 150px;
-  right: 150px;
-  height: 70%;
-  background-color: aliceblue;
-  animation: ani 1s forwards;
-  transform: translateX(200vh);
-  word-wrap: break-word;
-  z-index: 2;
-}
-@keyframes ani {
-  0% {
+@media (min-width: 200px) {
+  .Cart {
+    border-radius: 10px;
+    border: 2px solid black;
+    position: fixed;
+    top: 15%;
+    left: 5%;
+    right: 5%;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani 1s forwards;
     transform: translateX(200vh);
+    word-wrap: break-word;
+    z-index: 3;
   }
-  100% {
-    transform: translateX(0);
+  @keyframes ani {
+    0% {
+      transform: translateX(200vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
   }
-}
 
-.CartMod {
-  border-radius: 10px;
-  border: 2px solid black;
-  position: fixed;
-  top: 150px;
-  left: 150px;
-  right: 150px;
-  height: 70%;
-  background-color: aliceblue;
-  animation: ani1 1s forwards;
-  transform: translateX(200vh);
-  word-wrap: break-word;
-  z-index: 2;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-@keyframes ani1 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
+  .CartMod {
+    border-radius: 10px;
+    border: 2px solid black;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani1 1s forwards;
     transform: translateX(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  @keyframes ani1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200vh);
+    }
+  }
+  .CartBlock {
+    width: 55%;
+    height: 98%;
+    border-radius: 10px;
+    top: 1%;
+    position: fixed;
+    left: 2%;
+    display: inline-block;
+    background-color: rgb(197, 197, 197);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .Information {
+    display: inline-block;
+    position: absolute;
+    background-color: silver;
+    border-radius: 10px;
+    width: 30%;
+    height: 98%;
+    top: 1%;
+    left: 59%;
+    z-index: 1;
+  }
+
+  .back {
+    display: inline-block;
+    position: absolute;
+    background-color: silver;
+    border-radius: 10px;
+    width: 39%;
+    height: 91%;
+    top: 8%;
+    left: 59%;
+  }
+  .CloseBtnCart {
+    font-size: 20px;
+    margin: 1%;
+    float: right;
+    border-radius: 10px;
+    border: 2px solid black;
+    -webkit-transition: 0.3s ease;
   }
 }
+@media (min-width: 700px) {
+  .Cart {
+    border-radius: 10px;
+    border: 2px solid black;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani 1s forwards;
+    transform: translateX(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+  }
+  @keyframes ani {
+    0% {
+      transform: translateX(200vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
-.CloseBtnCart {
-  font-size: 20px;
-  margin: 10px;
-  float: right;
-  border-radius: 10px;
-  border: 2px solid black;
-  -webkit-transition: 0.3s ease;
+  .CartMod {
+    border-radius: 10px;
+    border: 2px solid black;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani1 1s forwards;
+    transform: translateX(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  @keyframes ani1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200vh);
+    }
+  }
+  .CartBlock {
+    width: 55%;
+    height: 98%;
+    border-radius: 10px;
+    top: 1%;
+    position: fixed;
+    left: 1%;
+    display: inline-block;
+    background-color: rgb(197, 197, 197);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .Information {
+    display: inline-block;
+    position: absolute;
+    background-color: silver;
+    border-radius: 10px;
+    width: 34%;
+    height: 98%;
+    top: 1%;
+    left: 58%;
+    z-index: 1;
+  }
+
+  .back {
+    display: inline-block;
+    position: absolute;
+    background-color: silver;
+    border-radius: 10px;
+    width: 41%;
+    height: 94%;
+    top: 5%;
+    left: 58%;
+  }
+  .CloseBtnCart {
+    font-size: 20px;
+    margin: 2%;
+    float: right;
+    border-radius: 10px;
+    border: 2px solid black;
+    -webkit-transition: 0.3s ease;
+  }
+}
+@media (min-width: 1000px) {
+  .Cart {
+    border-radius: 10px;
+    border: 2px solid black;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani 1s forwards;
+    transform: translateX(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+  }
+  @keyframes ani {
+    0% {
+      transform: translateX(200vh);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .CartMod {
+    border-radius: 10px;
+    border: 2px solid black;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+    right: 150px;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani1 1s forwards;
+    transform: translateX(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  @keyframes ani1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(200vh);
+    }
+  }
+  .CartBlock {
+    width: 55%;
+    height: 96%;
+    border-radius: 10px;
+    top: 2%;
+    position: fixed;
+    left: 1%;
+    display: inline-block;
+    background-color: rgb(197, 197, 197);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  .Information {
+    display: inline-block;
+    position: absolute;
+    background-color: silver;
+    border-radius: 10px;
+    width: 38.2%;
+    height: 96%;
+    top: 2%;
+    left: 58%;
+    z-index: 1;
+  }
+
+  .back {
+    display: inline-block;
+    position: absolute;
+    background-color: silver;
+    border-radius: 10px;
+    width: 41%;
+    height: 90.5%;
+    top: 7.5%;
+    left: 58%;
+  }
+  .CloseBtnCart {
+    font-size: 20px;
+    margin: 1%;
+    float: right;
+    border-radius: 10px;
+    border: 2px solid black;
+    -webkit-transition: 0.3s ease;
+  }
 }
 .CloseBtnCart:hover {
   transition: 0.3s;
@@ -63,46 +280,10 @@ h3 {
 }
 
 .CartLbl {
+  text-align: center;
   margin-top: 10px;
-  margin-left: 47%;
   font-size: 30px;
   display: block;
-  width: 85%;
-  float: left;
+  width: 100%;
   font-weight: bold;
-}
-
-.Information {
-  display: inline-block;
-  position: absolute;
-  background-color: silver;
-  border-radius: 10px;
-  width: 38.2%;
-  height: 97%;
-  top: 10px;
-  left: 59%;
-  z-index: 1;
-}
-.CartBlock {
-  border: 3px solid rgb(173, 173, 173);
-  width: 57.3%;
-  height: 96.4%;
-  border-radius: 10px;
-  top: 10px;
-  position: fixed;
-  margin-left: 10px;
-  display: inline-block;
-  background-color: rgb(197, 197, 197);
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-.back {
-  display: inline-block;
-  position: absolute;
-  background-color: silver;
-  border-radius: 10px;
-  width: 40.5%;
-  height: 92%;
-  top: 45px;
-  left: 59%;
 }

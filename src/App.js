@@ -7,14 +7,14 @@ import Cart from "./components/Cart";
 import ToolBar from "./components/ToolBar";
 import Login from "./components/Login";
 import Register from "./components/Register";
-
+import Blur from "./components/Blur";
 const App = () => {
   return (
     <div>
       <Cart />
       <Login />
       <Menu />
-
+      <Blur />
       <Route path="/store">
         <ToolBar />
         <ItemList />

@@ -1,48 +1,99 @@
-.Login {
-  border-radius: 10px;
-  border: 2px solid rgb(150, 150, 150);
-  position: fixed;
-  top: 17%;
-  left: 35%;
-  right: 35%;
-  height: 60%;
-  background-color: aliceblue;
-  animation: ani2 1s forwards;
-  transform: translateY(200vh);
-  word-wrap: break-word;
-  z-index: 2;
-}
-@keyframes ani2 {
-  0% {
-    transform: translateY(-200vh);
+@media (min-width: 300px) {
+  .Login {
+    border-radius: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    position: fixed;
+    top: 17%;
+    left: 5%;
+    right: 5%;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani2 1s forwards;
+    transform: translateY(200vh);
+    word-wrap: break-word;
+    z-index: 3;
   }
-  100% {
-    transform: translateY(0);
+  @keyframes ani2 {
+    0% {
+      transform: translateY(-200vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
-}
 
-.LoginMod {
-  border-radius: 10px;
-  border: 2px solid rgb(150, 150, 150);
-  position: fixed;
-  top: 17%;
-  left: 35%;
-  right: 35%;
-  height: 70%;
-  background-color: aliceblue;
-  animation: ani3 1s forwards;
-  transform: translateY(200vh);
-  word-wrap: break-word;
-  z-index: 2;
-  overflow-y: scroll;
-  overflow-x: hidden;
-}
-@keyframes ani3 {
-  0% {
-    transform: translateY(0);
+  .LoginMod {
+    border-radius: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    position: fixed;
+    top: 17%;
+    left: 5%;
+    right: 5%;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani3 1s forwards;
+    transform: translateY(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
-  100% {
-    transform: translateY(-200vh);
+  @keyframes ani3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-200vh);
+    }
+  }
+}
+@media (min-width: 700px) {
+  .Login {
+    border-radius: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    position: fixed;
+    top: 17%;
+    left: 35%;
+    right: 35%;
+    height: 60%;
+    background-color: aliceblue;
+    animation: ani2 1s forwards;
+    transform: translateY(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+  }
+  @keyframes ani2 {
+    0% {
+      transform: translateY(-200vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .LoginMod {
+    border-radius: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    position: fixed;
+    top: 17%;
+    left: 35%;
+    right: 35%;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani3 1s forwards;
+    transform: translateY(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  @keyframes ani3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-200vh);
+    }
   }
 }
 

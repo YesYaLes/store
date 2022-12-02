@@ -16,49 +16,42 @@ const Menu = () => {
   const dispatch = useDispatch();
 
   const CartVisibilityHandler = (event) => {
-    history.push("/store");
     setTimeout(() => {
       const par = event.target.parentElement.parentElement.children;
       if (CartVisibility === false) {
         document.body.style.overflowY = "hidden";
         par.item(0).style.display = "block";
         par.item(0).className = "Cart";
-        par.item(2).className = "MenuBlur";
-        par.item(2).style.pointerEvents = "none";
-        par.item(3).className = "ToolBarBlur";
-        par.item(4).className = "ItemListBlur";
-
+        par.item(3).style.display = "block";
         dispatch({ type: "ChangeCartVisibility" });
       }
     }, 100);
   };
   const LoginVisibilityHandler = (event) => {
-    history.push("/store");
     setTimeout(() => {
       const par = event.target.parentElement.parentElement.children;
       if (CartVisibility === false) {
         document.body.style.overflowY = "hidden";
         par.item(1).style.display = "block";
         par.item(1).className = "Login";
-        par.item(2).className = "MenuBlur";
-        par.item(2).style.pointerEvents = "none";
-        par.item(3).className = "ToolBarBlur";
-        par.item(4).className = "ItemListBlur";
+        par.item(3).style.display = "block";
         dispatch({ type: "ChangeCartVisibility" });
       }
     }, 100);
   };
   const Search = (event) => {
     history.push("/store");
-    setTimeout(() => {
-      const FilteredItems = ItemList.filter((list) => {
-        return list.Name.toUpperCase().includes(
-          event.target.previousElementSibling.value.toUpperCase()
-        );
-      });
+    if (event.target.previousElementSibling.value !== "") {
+      setTimeout(() => {
+        const FilteredItems = ItemList.filter((list) => {
+          return list.Name.toUpperCase().includes(
+            event.target.previousElementSibling.value.toUpperCase()
+          );
+        });
 
-      dispatch({ type: "FilterList", arr: FilteredItems });
-    }, 100);
+        dispatch({ type: "FilterList", arr: FilteredItems });
+      }, 100);
+    }
   };
   return (
     <Fragment>
@@ -79,11 +72,7 @@ const Menu = () => {
           width="45"
           height="45"
           className="PrvtOff"
-          onClick={
-            Logged || window.location.pathname === "/register"
-              ? console.log(Logged)
-              : LoginVisibilityHandler
-          }
+          onClick={Logged ? console.log(Logged) : LoginVisibilityHandler}
         />
         <img
           src={cart}

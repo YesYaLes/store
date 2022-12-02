@@ -23,13 +23,11 @@ const CartItem = (props) => {
         height="120"
         className="Pic"
       />
-      <h4 className="Cost">Cost: {props.Cost} $</h4>
+      <h4 className="Cost">{props.Cost} $</h4>
 
       <img
         src={trash}
         alt="Trash"
-        width="43"
-        height="43"
         onClick={DeleteFromList}
         className="DelBtn"
       />

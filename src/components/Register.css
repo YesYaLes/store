@@ -1,47 +1,139 @@
-.Register {
-  width: 100%;
-  position: relative;
-  top: 77px;
-  background-color: rgb(226, 226, 226);
-  height: 100vh;
+@media (min-width: 200px) {
+  .InputReg {
+    margin-left: 20%;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 7%;
+    width: 60%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px white;
+    box-shadow: 0px 1px 5px black;
+    outline: 0px;
+  }
+  .BTN {
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 7%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    background-color: azure;
+    -webkit-transition: 0.3s ease;
+  }
+  .Register {
+    width: 100%;
+    position: relative;
+    top: 77px;
+    background-color: rgb(226, 226, 226);
+    height: 100vh;
+  }
 }
-.RegisterBlur {
-  width: 100%;
-  position: relative;
-  top: 57px;
-  background-color: rgb(226, 226, 226);
-  height: 100vh;
-  filter: blur(4px) brightness(0.7);
-  pointer-events: none;
+@media (min-width: 700px) {
+  .InputReg {
+    margin-left: 20%;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 7%;
+    width: 60%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px white;
+    box-shadow: 0px 1px 5px black;
+    outline: 0px;
+  }
+  .BTN {
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 7%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    background-color: azure;
+    -webkit-transition: 0.3s ease;
+  }
+  .Register {
+    width: 100%;
+    position: relative;
+    top: 77px;
+    background-color: rgb(226, 226, 226);
+    height: 100vh;
+  }
 }
+@media (min-width: 1000px) {
+  .InputReg {
+    margin-left: 30%;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 4%;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px white;
+    box-shadow: 0px 1px 5px black;
+    outline: 0px;
+  }
+  .BTN {
+    display: block;
+    width: 40%;
+    margin: auto;
+    margin-top: 7%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    background-color: azure;
+    -webkit-transition: 0.3s ease;
+  }
+  .Register {
+    width: 100%;
+    position: relative;
+    top: 77px;
+    background-color: rgb(226, 226, 226);
+    height: 130vh;
+  }
+}
+@media (min-width: 1200px) {
+  .InputReg {
+    margin-left: 35%;
+    display: inline-block;
+    padding: 3px;
+    margin-top: 3%;
+    width: 30%;
+    font-size: 20px;
+    border-radius: 5px;
+    border: 2px white;
+    box-shadow: 0px 1px 5px black;
+    outline: 0px;
+  }
+  .BTN {
+    display: block;
+    width: 20%;
+    margin: auto;
+    margin-top: 3%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 7px;
+    border: none;
+    background-color: azure;
+    -webkit-transition: 0.3s ease;
+  }
+  .Register {
+    width: 100%;
+    position: relative;
+    top: 77px;
+    background-color: rgb(226, 226, 226);
+    height: 100vh;
+  }
+}
+
 .RegLbl {
   width: 100%;
   text-align: center;
-}
-
-.InputReg {
-  margin-left: 40%;
-  display: inline-block;
-  padding: 3px;
-  margin-top: 80px;
-  width: 20%;
-  font-size: 20px;
-  border-radius: 5px;
-  border: 2px white;
-  box-shadow: 0px 1px 5px black;
-  outline: 0px;
-}
-.BTN {
-  display: block;
-  width: 20%;
-  margin: auto;
-  margin-top: 40px;
-  font-size: 15px;
-  padding: 5px;
-  border-radius: 7px;
-  border: none;
-  background-color: azure;
-  -webkit-transition: 0.3s ease;
 }
 
 .BTN:hover {

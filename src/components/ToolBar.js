@@ -48,14 +48,6 @@ const ToolBar = () => {
     const labels = event.target.children;
     for (let memb of labels) {
       switch (memb.className) {
-        case "labelTool": {
-          memb.style.marginLeft = "43%";
-          break;
-        }
-        case "CostLabel": {
-          memb.style.marginLeft = "37%";
-          break;
-        }
         case "NumOfCost": {
           memb.style.display = "inline-block";
           break;
@@ -83,14 +75,6 @@ const ToolBar = () => {
     const labels = event.target.children;
     for (let memb of labels) {
       switch (memb.className) {
-        case "labelTool": {
-          memb.style.marginLeft = "30%";
-          break;
-        }
-        case "CostLabel": {
-          memb.style.marginLeft = "16%";
-          break;
-        }
         case "NumOfCost": {
           memb.style.display = "none";
           break;

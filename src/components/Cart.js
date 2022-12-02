@@ -7,15 +7,11 @@ const Cart = () => {
   const dispatch = useDispatch();
   const CLoseModal = (event) => {
     const par = event.target.parentElement.parentElement.children;
-    par.item(2).className = "Menu";
-    par.item(3).className = "ToolBar";
-    par.item(4).className = "ItemList";
     dispatch({ type: "ChangeCartVisibility" });
     par.item(0).className = "CartMod";
-    par.item(2).style.pointerEvents = "none";
     setTimeout(() => {
+      par.item(3).style.display = "none";
       par.item(0).style.display = "none";
-      par.item(2).style.pointerEvents = "auto";
       document.body.style.overflow = "auto";
     }, 750);
   };

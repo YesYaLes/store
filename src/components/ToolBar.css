@@ -1,35 +1,70 @@
-.ToolBar {
-  position: fixed;
-  width: 10%;
-  top: 77px;
-  background-color: rgb(206, 206, 206);
-  height: 150vh;
-  z-index: 0;
-  border-right: 2px solid rgb(146, 146, 146);
-  -webkit-transition: 0.3s ease;
-  z-index: 1;
-}
-.ToolBarBlur {
-  top: 77px;
-  position: fixed;
-  width: 10%;
-  background-color: rgb(184, 184, 184);
-  height: 100vh;
-  z-index: 0;
-  filter: blur(4px) brightness(0.7);
-  pointer-events: none;
-}
+@media (min-width: 200px) {
+  .ToolBar {
+    position: fixed;
+    width: 20%;
+    top: 77px;
+    background-color: rgb(206, 206, 206);
+    height: 150vh;
+    z-index: 0;
+    border-right: 2px solid rgb(146, 146, 146);
+    -webkit-transition: 0.3s ease;
+    z-index: 1;
+  }
 
-.ToolBar:hover {
-  width: 25%;
-  transition: 0.3s;
+  .ToolBar:hover {
+    width: 65%;
+    transition: 0.3s;
+  }
+  .RangeOfCost {
+    animation: ani11 1s forwards;
+    display: none;
+    width: 40%;
+    margin: 5px;
+  }
+  .Val {
+    text-align: center;
+    animation: ani11 1s forwards;
+    padding: 4px;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: azure;
+    width: 21%;
+    display: none;
+  }
 }
+@media (min-width: 700px) {
+  .ToolBar {
+    position: fixed;
+    width: 10%;
+    top: 77px;
+    background-color: rgb(206, 206, 206);
+    height: 150vh;
+    z-index: 0;
+    border-right: 2px solid rgb(146, 146, 146);
+    -webkit-transition: 0.3s ease;
+    z-index: 1;
+  }
 
-.RangeOfCost {
-  animation: ani11 1s forwards;
-  display: none;
-  width: 70%;
-  margin: 5px;
+  .ToolBar:hover {
+    width: 25%;
+    transition: 0.3s;
+  }
+  .RangeOfCost {
+    animation: ani11 1s forwards;
+    display: none;
+    width: 55%;
+    margin: 5px;
+  }
+  .Val {
+    text-align: center;
+    animation: ani11 1s forwards;
+    padding: 4px;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: azure;
+    width: 15%;
+    display: none;
+  }
 }
 
 .labelTool {
@@ -37,7 +72,8 @@
   font-weight: bold;
   display: block;
   transition: 0.3s;
-  margin-left: 30%;
+  width: 100%;
+  text-align: center;
   font-size: 35px;
 }
 .NumOfCost {
@@ -47,15 +83,7 @@
   width: 10%;
   display: none;
 }
-.Val {
-  animation: ani11 1s forwards;
-  padding: 4px;
-  margin: 7px;
-  border-radius: 10px;
-  background-color: azure;
-  width: auto;
-  display: none;
-}
+
 .SortBtn {
   animation: ani11 1s forwards;
   display: none;
@@ -72,14 +100,16 @@
   transition: 0.3s;
 }
 .CostLabel {
+  font-size: 1.1rem;
   text-align: center;
   padding: 8px;
-  width: 110px;
+  width: auto;
   border-radius: 10px;
   background-color: azure;
   display: block;
   transition: 0.3s;
-  margin-left: 16%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 @keyframes ani11 {

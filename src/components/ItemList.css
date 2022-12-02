@@ -1,19 +1,20 @@
-.ItemList {
-  margin-left: 10%;
-  width: 90%;
-  position: relative;
-  top: 75px;
-  background-color: rgb(226, 226, 226);
-  height: 200vh;
+@media (min-width: 200px) {
+  .ItemList {
+    margin-left: 20%;
+    width: 80%;
+    position: relative;
+    top: 75px;
+    background-color: rgb(226, 226, 226);
+    height: 200vh;
+  }
 }
-
-.ItemListBlur {
-  margin-left: 10%;
-  width: 90%;
-  position: relative;
-  top: 75px;
-  background-color: rgb(226, 226, 226);
-  height: 200vh;
-  filter: blur(4px) brightness(0.7);
-  pointer-events: none;
+@media (min-width: 700px) {
+  .ItemList {
+    margin-left: 10%;
+    width: 90%;
+    position: relative;
+    top: 75px;
+    background-color: rgb(226, 226, 226);
+    height: 200vh;
+  }
 }

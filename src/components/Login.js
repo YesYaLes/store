@@ -8,14 +8,12 @@ const Login = () => {
   const AuthData = useSelector((state) => state.AuthData);
   const CLoseModal = (event) => {
     const par = event.target.parentElement.parentElement.children;
-    par.item(2).className = "Menu";
-    par.item(3).className = "ToolBar";
-    par.item(4).className = "ItemList";
+
     par.item(1).className = "LoginMod";
-    par.item(2).style.pointerEvents = "none";
+    par.item(3).style.display = "none";
     setTimeout(() => {
       par.item(1).style.display = "none";
-      par.item(2).style.pointerEvents = "auto";
+
       document.body.style.overflow = "auto";
     }, 750);
     par.item(1).children.item(3).value = "";
@@ -31,17 +29,13 @@ const Login = () => {
         dispatch({ type: "LogIn" });
         dispatch({ type: "SetPic", value: element.PicSrc });
         const par = event.target.parentElement.parentElement.children;
-        par.item(2).className = "Menu";
-        par.item(3).className = "ToolBar";
-        par.item(4).className = "ItemList";
         par.item(1).className = "LoginMod";
         par.item(2).style.pointerEvents = "none";
         setTimeout(() => {
           par.item(1).style.display = "none";
-          par.item(2).style.pointerEvents = "auto";
+          par.item(3).style.display = "none";
           document.body.style.overflow = "auto";
         }, 750);
-
         par1.item(3).value = "";
         par1.item(4).value = "";
       } else {
@@ -63,14 +57,10 @@ const Login = () => {
   const EnterReg = (event) => {
     dispatch({ type: "RegProcess" });
     const par = event.target.parentElement.parentElement.children;
-    par.item(2).className = "Menu";
-    par.item(3).className = "ToolBar";
-    par.item(4).className = "ItemList";
     par.item(1).className = "LoginMod";
-    par.item(2).style.pointerEvents = "none";
     setTimeout(() => {
       par.item(1).style.display = "none";
-      par.item(2).style.pointerEvents = "auto";
+      par.item(3).style.display = "none";
       document.body.style.overflow = "auto";
       history.push("/register");
     }, 500);

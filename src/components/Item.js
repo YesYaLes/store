@@ -16,11 +16,9 @@ const Item = (props) => {
     const par = event.target.parentElement.parentElement.parentElement.children;
     if (CartVisibility === false) {
       document.body.style.overflowY = "hidden";
+      par.item(3).style.display = "block";
       par.item(0).style.display = "block";
       par.item(0).className = "Cart";
-      par.item(2).className = "MenuBlur";
-      par.item(3).className = "ToolBarBlur";
-      par.item(4).className = "ItemListBlur";
       dispatch({ type: "ChangeCartVisibility" });
     }
   };

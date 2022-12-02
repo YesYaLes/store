@@ -1,12 +1,92 @@
-.Item {
-  text-align: center;
-  border-radius: 5px;
-  width: 19.4%;
-  height: 20%;
-  margin: 5px;
-  display: inline-block;
-  background-color: #ffffff;
-  -webkit-transition: 0.2s ease;
+@media (min-width: 200px) {
+  .Item {
+    text-align: center;
+    border-radius: 5px;
+    width: 36.5vw;
+    height: 35vh;
+    margin-left: 11px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    -webkit-transition: 0.2s ease;
+  }
+  .Image {
+    margin-top: 10px;
+    width: 80%;
+    height: 40%;
+  }
+}
+@media (min-width: 400px) {
+  .Item {
+    text-align: center;
+    border-radius: 5px;
+    width: 36.5vw;
+    height: 30vh;
+    margin-left: 11px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    -webkit-transition: 0.2s ease;
+  }
+  .Image {
+    margin-top: 10px;
+    width: 80%;
+    height: 40%;
+  }
+}
+@media (min-width: 700px) {
+  .Item {
+    text-align: center;
+    border-radius: 5px;
+    width: 21vw;
+    height: 40vh;
+    margin-left: 11px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    -webkit-transition: 0.2s ease;
+  }
+  .Image {
+    margin-top: 10px;
+    width: 80%;
+    height: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .Item {
+    text-align: center;
+    border-radius: 5px;
+    width: 21vw;
+    height: 45vh;
+    margin-left: 11px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    -webkit-transition: 0.2s ease;
+  }
+  .Image {
+    margin-top: 10px;
+    width: 80%;
+    height: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .Item {
+    text-align: center;
+    border-radius: 5px;
+    width: 17.1vw;
+    height: 40vh;
+    margin-left: 11px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    -webkit-transition: 0.2s ease;
+  }
+  .Image {
+    margin-top: 10px;
+    width: 80%;
+    height: 50%;
+  }
 }
 .Item:hover {
   background-color: #f7f7f7;
@@ -31,11 +111,7 @@
   background-color: rgb(230, 207, 79);
   transition: 0.3s;
 }
-.Image {
-  margin-top: 10px;
-  width: 65%;
-  height: 55%;
-}
+
 .CostLbl {
   margin-top: auto;
 }

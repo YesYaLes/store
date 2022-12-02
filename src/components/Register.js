@@ -5,8 +5,15 @@ import "./Register.css";
 const Register = () => {
   const history = useHistory();
   const dispatch = useDispatch();
-  const CloseReg = () => {
-    console.log(window.location.pathname);
+  const CloseReg = (event) => {
+    const par = event.target.parentElement.children;
+    par.item(1).value = "";
+    par.item(3).value = "";
+    par.item(5).value = "";
+    par.item(7).value = "";
+    par.item(9).value = "";
+    par.item(11).value = "";
+
     dispatch({ type: "RegProcess" });
     history.push("/store");
   };
@@ -24,16 +31,22 @@ const Register = () => {
       if (par.item(7).value === par.item(9).value) {
         NewAcc = {
           Name: par.item(1).value,
-          Surname: par.item(2).value,
-          Login: par.item(3).value,
-          Password: par.item(4).value,
+          Surname: par.item(3).value,
+          Login: par.item(5).value,
+          Password: par.item(7).value,
           ID: Math.random(),
-          PicSrc: par.item(6).value,
+          PicSrc: par.item(11).value,
         };
         dispatch({ type: "PushToAuthData", memb: NewAcc });
-        par.item(13).style.backgroundColor = "green";
+        par.item(13).style.backgroundColor = "lime";
         par.item(13).textContent = "Succes";
         setTimeout(() => {
+          par.item(1).value = "";
+          par.item(3).value = "";
+          par.item(5).value = "";
+          par.item(7).value = "";
+          par.item(9).value = "";
+          par.item(11).value = "";
           history.push("/store");
         }, 3000);
       } else {
