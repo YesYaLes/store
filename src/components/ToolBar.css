@@ -7,7 +7,7 @@
     height: 150vh;
     z-index: 0;
     border-right: 2px solid rgb(146, 146, 146);
-    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
     z-index: 1;
   }
 
@@ -22,40 +22,42 @@
     margin: 5px;
   }
   .Val {
+    font-size: 12px;
     text-align: center;
     animation: ani11 1s forwards;
     padding: 4px;
     margin: 2%;
     border-radius: 10px;
     background-color: azure;
-    width: 21%;
+    width: 20%;
     display: none;
   }
 }
 @media (min-width: 700px) {
   .ToolBar {
     position: fixed;
-    width: 10%;
+    width: 15%;
     top: 77px;
     background-color: rgb(206, 206, 206);
     height: 150vh;
     z-index: 0;
     border-right: 2px solid rgb(146, 146, 146);
-    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
     z-index: 1;
   }
 
   .ToolBar:hover {
-    width: 25%;
+    width: 30%;
     transition: 0.3s;
   }
   .RangeOfCost {
     animation: ani11 1s forwards;
     display: none;
-    width: 55%;
+    width: 50%;
     margin: 5px;
   }
   .Val {
+    font-size: 12px;
     text-align: center;
     animation: ani11 1s forwards;
     padding: 4px;
@@ -66,15 +68,86 @@
     display: none;
   }
 }
+@media (min-width: 1000px) {
+  .ToolBar {
+    position: fixed;
+    width: 15%;
+    top: 77px;
+    background-color: rgb(206, 206, 206);
+    height: 150vh;
+    z-index: 0;
+    border-right: 2px solid rgb(146, 146, 146);
+    transition: 0.3s ease;
+    z-index: 1;
+  }
+
+  .ToolBar:hover {
+    width: 30%;
+    transition: 0.3s;
+  }
+  .RangeOfCost {
+    animation: ani11 1s forwards;
+    display: none;
+    width: 50%;
+    margin: 5px;
+  }
+  .Val {
+    font-size: 20px;
+    text-align: center;
+    animation: ani11 1s forwards;
+    padding: 4px;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: azure;
+    width: 18%;
+    display: none;
+  }
+}
+@media (min-width: 1400px) {
+  .ToolBar {
+    position: fixed;
+    width: 10%;
+    top: 77px;
+    background-color: rgb(206, 206, 206);
+    height: 150vh;
+    z-index: 0;
+    border-right: 2px solid rgb(146, 146, 146);
+    transition: 0.3s ease;
+    z-index: 1;
+  }
+
+  .ToolBar:hover {
+    width: 20%;
+    transition: 0.3s;
+  }
+  .RangeOfCost {
+    animation: ani11 1s forwards;
+    display: none;
+    width: 50%;
+    margin: 5px;
+  }
+  .Val {
+    font-size: 15px;
+    text-align: center;
+    animation: ani11 1s forwards;
+    padding: 4px;
+    margin: 2%;
+    border-radius: 10px;
+    background-color: azure;
+    width: 3.3vw;
+    display: none;
+  }
+}
 
 .labelTool {
-  margin-top: 20px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   font-weight: bold;
   display: block;
   transition: 0.3s;
   width: 100%;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
 }
 .NumOfCost {
   height: 18px;
@@ -85,14 +158,15 @@
 }
 
 .SortBtn {
+  width: 30%;
   animation: ani11 1s forwards;
   display: none;
-  margin-left: 42%;
+  margin-left: 35%;
   font-size: 20px;
   background-color: rgb(123, 188, 207);
   padding: 5px;
   border-radius: 10px;
-  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .SortBtn:hover {
@@ -100,7 +174,7 @@
   transition: 0.3s;
 }
 .CostLabel {
-  font-size: 1.1rem;
+  font-size: 1rem;
   text-align: center;
   padding: 8px;
   width: auto;

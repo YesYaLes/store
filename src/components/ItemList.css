@@ -10,6 +10,16 @@
 }
 @media (min-width: 700px) {
   .ItemList {
+    margin-left: 15%;
+    width: 85%;
+    position: relative;
+    top: 75px;
+    background-color: rgb(226, 226, 226);
+    height: 200vh;
+  }
+}
+@media (min-width: 1400px) {
+  .ItemList {
     margin-left: 10%;
     width: 90%;
     position: relative;

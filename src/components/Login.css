@@ -53,8 +53,8 @@
     border: 2px solid rgb(150, 150, 150);
     position: fixed;
     top: 17%;
-    left: 35%;
-    right: 35%;
+    left: 20%;
+    right: 20%;
     height: 60%;
     background-color: aliceblue;
     animation: ani2 1s forwards;
@@ -76,8 +76,8 @@
     border: 2px solid rgb(150, 150, 150);
     position: fixed;
     top: 17%;
-    left: 35%;
-    right: 35%;
+    left: 20%;
+    right: 20%;
     height: 70%;
     background-color: aliceblue;
     animation: ani3 1s forwards;
@@ -96,7 +96,55 @@
     }
   }
 }
+@media (min-width: 1000px) {
+  .Login {
+    border-radius: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    position: fixed;
+    top: 17%;
+    left: 30%;
+    right: 30%;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani2 1s forwards;
+    transform: translateY(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+  }
+  @keyframes ani2 {
+    0% {
+      transform: translateY(-200vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 
+  .LoginMod {
+    border-radius: 10px;
+    border: 2px solid rgb(150, 150, 150);
+    position: fixed;
+    top: 17%;
+    left: 30%;
+    right: 30%;
+    height: 70%;
+    background-color: aliceblue;
+    animation: ani3 1s forwards;
+    transform: translateY(200vh);
+    word-wrap: break-word;
+    z-index: 3;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  @keyframes ani3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-200vh);
+    }
+  }
+}
 .CloseBtnLog {
   font-size: 20px;
   margin: 10px;
@@ -151,7 +199,7 @@
 
 .ContinueBtn {
   position: absolute;
-  top: 47%;
+  top: 50%;
   right: 35%;
   left: 35%;
   font-size: 18px;
@@ -177,7 +225,7 @@
 
 .BtnReg {
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 40%;
   right: 40%;
   font-size: 15px;

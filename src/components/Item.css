@@ -3,89 +3,184 @@
     text-align: center;
     border-radius: 5px;
     width: 36.5vw;
-    height: 35vh;
+    height: 33vh;
     margin-left: 11px;
     margin-top: 10px;
     display: inline-block;
     background-color: #ffffff;
-    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .Image {
     margin-top: 10px;
     width: 80%;
     height: 40%;
   }
+  .ButtonBuy {
+    padding: 8px;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: rgb(194, 240, 240);
+    transition: 0.3s ease;
+  }
+  .CostLbl {
+    margin: 1vh;
+  }
 }
+
 @media (min-width: 400px) {
   .Item {
     text-align: center;
     border-radius: 5px;
     width: 36.5vw;
-    height: 30vh;
+    height: 27vh;
     margin-left: 11px;
     margin-top: 10px;
     display: inline-block;
     background-color: #ffffff;
-    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .Image {
     margin-top: 10px;
     width: 80%;
     height: 40%;
+  }
+  .ButtonBuy {
+    padding: 8px;
+    margin-top: auto;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: rgb(194, 240, 240);
+    transition: 0.3s ease;
+  }
+  .CostLbl {
+    margin-bottom: 10%;
   }
 }
 @media (min-width: 700px) {
   .Item {
     text-align: center;
     border-radius: 5px;
-    width: 21vw;
-    height: 40vh;
+    width: 26.5vw;
+    height: 30vh;
     margin-left: 11px;
     margin-top: 10px;
     display: inline-block;
     background-color: #ffffff;
-    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .Image {
     margin-top: 10px;
     width: 80%;
     height: 50%;
+  }
+  .ButtonBuy {
+    padding: 8px;
+    margin-top: auto;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(194, 240, 240);
+    transition: 0.3s ease;
   }
 }
 @media (min-width: 1000px) {
   .Item {
     text-align: center;
     border-radius: 5px;
-    width: 21vw;
+    width: 20vw;
     height: 45vh;
     margin-left: 11px;
     margin-top: 10px;
     display: inline-block;
     background-color: #ffffff;
-    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .Image {
     margin-top: 10px;
     width: 80%;
     height: 50%;
+  }
+  .ButtonBuy {
+    padding: 8px;
+    margin-top: auto;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(194, 240, 240);
+    transition: 0.3s ease;
+  }
+  .CostLbl {
+    margin-bottom: 5%;
   }
 }
 @media (min-width: 1200px) {
   .Item {
     text-align: center;
     border-radius: 5px;
-    width: 17.1vw;
+    width: 20.2vw;
     height: 40vh;
     margin-left: 11px;
     margin-top: 10px;
     display: inline-block;
     background-color: #ffffff;
-    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
   }
   .Image {
     margin-top: 10px;
     width: 80%;
     height: 50%;
+  }
+  .ButtonBuy {
+    padding: 8px;
+    margin-top: auto;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(194, 240, 240);
+    transition: 0.3s ease;
+  }
+  .CostLbl {
+    font-size: 20px;
+    margin-bottom: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .Item {
+    text-align: center;
+    border-radius: 5px;
+    width: 16.2vw;
+    height: 40vh;
+    margin-left: 11px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ffffff;
+    transition: 0.2s ease;
+  }
+  .Image {
+    margin-top: 10px;
+    width: 80%;
+    height: 50%;
+  }
+  .ButtonBuy {
+    padding: 8px;
+    margin-top: auto;
+    margin-bottom: 1%;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgb(194, 240, 240);
+    transition: 0.3s ease;
+  }
+  .CostLbl {
+    font-size: 20px;
+    margin-bottom: 10%;
   }
 }
 .Item:hover {
@@ -96,22 +191,8 @@
   margin-top: 10px;
   font-size: 25px;
 }
-.ButtonBuy {
-  padding: 8px;
-  margin-top: auto;
-  margin-bottom: 1%;
-  border: none;
-  border-radius: 20px;
-  font-size: 20px;
-  background-color: rgb(194, 240, 240);
-  -webkit-transition: 0.3s ease;
-}
 
 .ButtonBuy:hover {
   background-color: rgb(230, 207, 79);
   transition: 0.3s;
-}
-
-.CostLbl {
-  margin-top: auto;
 }
