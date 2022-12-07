@@ -26,23 +26,24 @@ const Cart = () => {
         <button className="CloseBtnCart" onClick={CLoseModal}>
           X
         </button>
+        <div className="CartBlock">
+          <label className="CartLbl">Cart:</label>
+          <div className="CartList">
+            {CartList.map((item) => (
+              <CartItem
+                src={item.src}
+                className="Item"
+                Name={item.Name}
+                Cost={item.Cost}
+                key={Math.random()}
+                Id={item.Id}
+              ></CartItem>
+            ))}
+          </div>
+        </div>
 
         <div className="Information">
           <h3>Total: {sum} $</h3>
-        </div>
-        <div className="back"></div>
-        <div className="CartBlock">
-          <label className="CartLbl">Cart:</label>
-          {CartList.map((item) => (
-            <CartItem
-              src={item.src}
-              className="Item"
-              Name={item.Name}
-              Cost={item.Cost}
-              key={Math.random()}
-              Id={item.Id}
-            ></CartItem>
-          ))}
         </div>
       </div>
     </Fragment>

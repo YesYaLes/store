@@ -8,6 +8,7 @@ import ToolBar from "./components/ToolBar";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Blur from "./components/Blur";
+import ItemDetail from "./components/ItemDetail";
 const App = () => {
   return (
     <div>
@@ -15,9 +16,12 @@ const App = () => {
       <Login />
       <Menu />
       <Blur />
-      <Route path="/store">
+      <Route path="/store" exact>
         <ToolBar />
         <ItemList />
+      </Route>
+      <Route path="/store/:productId">
+        <ItemDetail />
       </Route>
       <Route path="/register">
         <Register />

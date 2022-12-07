@@ -1,269 +1,118 @@
 @media (min-width: 200px) {
   .CartItem {
-    display: inline-block;
-    margin: 8px;
-    margin-left: 5%;
-    position: relative;
-
     height: 50%;
-    border-radius: 5px;
-    background-color: rgb(238, 238, 238);
-    width: 90%;
+    width: 44%;
   }
   .Name {
     width: 100%;
-    position: absolute;
     font-size: 25px;
-    display: inline-block;
     text-align: center;
   }
 
   .Cost {
-    position: absolute;
-    font-size: 15px;
-    left: 10px;
-    top: 75%;
-    display: inline-block;
+    font-size: 20px;
   }
   .DelBtn {
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(123, 188, 207);
-    transition: 0.3s ease;
     width: 20%;
+    height: 30%;
   }
   .Pic {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    right: 10%;
-  }
-}
-@media (min-width: 400px) {
-  .CartItem {
-    display: inline-block;
-    margin: 8px;
-    margin-left: 5%;
-    position: relative;
-
-    height: 40%;
-    border-radius: 5px;
-    background-color: rgb(238, 238, 238);
-    width: 90%;
-  }
-  .Name {
-    width: 100%;
-    position: absolute;
-    font-size: 25px;
-    display: inline-block;
-    text-align: center;
-  }
-
-  .Cost {
-    position: absolute;
-    font-size: 15px;
-    left: 10px;
-    top: 75%;
-    display: inline-block;
-  }
-  .DelBtn {
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(123, 188, 207);
-    transition: 0.3s ease;
-    width: 20%;
-  }
-  .Pic {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    width: 80%;
   }
 }
 @media (min-width: 700px) {
   .CartItem {
-    display: inline-block;
-    margin: 1%;
-    margin-left: 4%;
-    position: relative;
-    height: 25%;
-    border-radius: 5px;
-    background-color: rgb(238, 238, 238);
-    width: 43%;
+    height: 50%;
+    width: 30%;
   }
   .Name {
     width: 100%;
-    position: absolute;
-    font-size: 30px;
-    display: inline-block;
+    font-size: 25px;
     text-align: center;
   }
 
   .Cost {
-    position: absolute;
-    font-size: 15px;
-    left: 10px;
-    top: 75%;
-    display: inline-block;
+    font-size: 20px;
   }
   .DelBtn {
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(123, 188, 207);
-    transition: 0.3s ease;
     width: 20%;
+    height: 40%;
   }
   .Pic {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 90%;
+    height: 50%;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 700px) {
   .CartItem {
-    display: inline-block;
-    margin: 8px;
-    margin-left: 15px;
-    position: relative;
-
     height: 50%;
-    border-radius: 5px;
-    background-color: rgb(238, 238, 238);
-    width: 28%;
+    width: 29%;
   }
   .Name {
     width: 100%;
-    position: absolute;
-    font-size: 30px;
-    display: inline-block;
+    font-size: 25px;
     text-align: center;
   }
 
   .Cost {
-    position: absolute;
     font-size: 20px;
-    left: 10px;
-    top: 70%;
-    display: inline-block;
   }
   .DelBtn {
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(123, 188, 207);
-    transition: 0.3s ease;
     width: 20%;
+    height: 30%;
   }
   .Pic {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 90%;
+    height: 50%;
   }
 }
 @media (min-width: 1200px) {
   .CartItem {
-    display: inline-block;
-    margin: 8px;
-    margin-left: 15px;
-    position: relative;
     height: 40%;
-    border-radius: 5px;
-    background-color: rgb(238, 238, 238);
-    width: 21%;
+    width: 29%;
   }
   .Name {
     width: 100%;
-    position: absolute;
-    font-size: 30px;
-    display: inline-block;
+    font-size: 25px;
     text-align: center;
   }
 
   .Cost {
-    position: absolute;
-    font-size: 20px;
-    left: 10px;
-    top: 70%;
-    display: inline-block;
   }
   .DelBtn {
-    position: absolute;
-    top: 80%;
-    left: 65%;
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(123, 188, 207);
-    transition: 0.3s ease;
-    width: 20%;
   }
   .Pic {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 90%;
   }
 }
-@media (min-width: 1400px) {
-  .CartItem {
-    display: inline-block;
-    margin: 8px;
-    margin-left: 15px;
-    position: relative;
-    height: 35%;
-    border-radius: 5px;
-    background-color: rgb(238, 238, 238);
-    width: 21%;
-  }
-  .Name {
-    width: 100%;
-    position: absolute;
-    font-size: 30px;
-    display: inline-block;
-    text-align: center;
-  }
+.CartItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 8px;
+  height: auto;
+  border-radius: 5px;
+  background-color: rgb(238, 238, 238);
+}
+.InfItem {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.Name {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+}
 
-  .Cost {
-    position: absolute;
-    font-size: 20px;
-    left: 10px;
-    top: 75%;
-    display: inline-block;
-  }
-  .DelBtn {
-    position: absolute;
-    top: 80%;
-    left: 70%;
-    display: inline-block;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: rgb(123, 188, 207);
-    transition: 0.3s ease;
-    width: 20%;
-  }
-  .Pic {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    width: 90%;
-  }
+.DelBtn {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(123, 188, 207);
+  transition: 0.3s ease;
+  width: 20%;
+}
+.Pic {
+  width: 90%;
 }
 .DelBtn:hover {
   background-color: rgb(212, 112, 95);

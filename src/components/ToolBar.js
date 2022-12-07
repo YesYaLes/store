@@ -64,7 +64,6 @@ const ToolBar = () => {
           memb.style.display = "inline-block";
           break;
         }
-
         default: {
           break;
         }

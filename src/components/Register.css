@@ -21,7 +21,7 @@
     border-radius: 7px;
     border: none;
     background-color: azure;
-    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
   .Register {
     width: 100%;
@@ -54,7 +54,7 @@
     border-radius: 7px;
     border: none;
     background-color: azure;
-    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
   .Register {
     width: 100%;
@@ -87,7 +87,7 @@
     border-radius: 7px;
     border: none;
     background-color: azure;
-    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
   .Register {
     width: 100%;
@@ -120,7 +120,7 @@
     border-radius: 7px;
     border: none;
     background-color: azure;
-    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
   .Register {
     width: 100%;

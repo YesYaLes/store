@@ -1,367 +1,64 @@
 @media (min-width: 200px) {
   .Cart {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
     top: 15%;
     left: 5%;
     right: 5%;
     height: 70%;
-    background-color: aliceblue;
-    animation: ani 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
   }
-  @keyframes ani {
-    0% {
-      transform: translateX(200vh);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .CartMod {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
     top: 15%;
     left: 5%;
     right: 5%;
     height: 70%;
-    background-color: aliceblue;
-    animation: ani1 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  @keyframes ani1 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(200vh);
-    }
   }
   .CartBlock {
-    width: 55%;
-    height: 98%;
-    border-radius: 10px;
-    top: 1%;
-    position: fixed;
-    left: 2%;
-    display: inline-block;
-    background-color: rgb(197, 197, 197);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 65%;
+    top: 8px;
+    left: 8px;
+    right: 8px;
   }
   .Information {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 30%;
-    height: 98%;
-    top: 1%;
-    left: 59%;
-    z-index: 1;
-  }
-
-  .back {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 39%;
-    height: 91%;
-    top: 8%;
-    left: 59%;
-  }
-  .CloseBtnCart {
-    font-size: 20px;
-    margin: 1%;
-    float: right;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: 0.3s ease;
+    left: 8px;
+    right: 8px;
+    height: 30%;
+    top: 69%;
   }
 }
 
-@media (min-width: 700px) {
-  .Cart {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
-    top: 15%;
-    left: 5%;
-    right: 5%;
-    height: 70%;
-    background-color: aliceblue;
-    animation: ani 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
-  }
-  @keyframes ani {
-    0% {
-      transform: translateX(200vh);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .CartMod {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
-    top: 15%;
-    left: 5%;
-    right: 5%;
-    height: 70%;
-    background-color: aliceblue;
-    animation: ani1 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  @keyframes ani1 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(200vh);
-    }
-  }
-  .CartBlock {
-    width: 55%;
-    height: 98%;
-    border-radius: 10px;
-    top: 1%;
-    position: fixed;
-    left: 1%;
-    display: inline-block;
-    background-color: rgb(197, 197, 197);
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .Information {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 36%;
-    height: 98%;
-    top: 1%;
-    left: 58%;
-    z-index: 1;
-  }
-
-  .back {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 41%;
-    height: 94%;
-    top: 5%;
-    left: 58%;
-  }
-  .CloseBtnCart {
-    font-size: 20px;
-    margin: 1%;
-    float: right;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: 0.3s ease;
-  }
-}
 @media (min-width: 1000px) {
   .Cart {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
     top: 15%;
-    left: 5%;
-    right: 5%;
+    left: 10%;
+    right: 10%;
     height: 70%;
-    background-color: aliceblue;
-    animation: ani 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
   }
-  @keyframes ani {
-    0% {
-      transform: translateX(200vh);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
   .CartMod {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
     top: 15%;
     left: 5%;
     right: 5%;
     height: 70%;
-    background-color: aliceblue;
-    animation: ani1 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  @keyframes ani1 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(200vh);
-    }
   }
   .CartBlock {
     width: 55%;
-    height: 96%;
-    border-radius: 10px;
-    top: 2%;
-    position: fixed;
-    left: 1%;
-    display: inline-block;
-    background-color: rgb(197, 197, 197);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    top: 8px;
+    left: 8px;
+    height: 97%;
   }
   .Information {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 37%;
-    height: 96%;
-    top: 2%;
-    left: 58%;
-    z-index: 1;
-  }
-
-  .back {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 41%;
-    height: 87.5%;
-    top: 10.5%;
-    left: 58%;
-  }
-  .CloseBtnCart {
-    font-size: 20px;
-    margin: 1%;
-    float: right;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: 0.3s ease;
+    top: 8px;
+    height: 97%;
+    left: 57%;
   }
 }
-@media (min-width: 1200px) {
-  .Cart {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
-    top: 15%;
-    left: 5%;
-    right: 5%;
-    height: 70%;
-    background-color: aliceblue;
-    animation: ani 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
-  }
-  @keyframes ani {
-    0% {
-      transform: translateX(200vh);
-    }
-    100% {
-      transform: translateX(0);
-    }
-  }
-
-  .CartMod {
-    border-radius: 10px;
-    border: 2px solid black;
-    position: fixed;
-    top: 15%;
-    left: 5%;
-    right: 5%;
-    height: 70%;
-    background-color: aliceblue;
-    animation: ani1 1s forwards;
-    transform: translateX(200vh);
-    word-wrap: break-word;
-    z-index: 3;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  @keyframes ani1 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(200vh);
-    }
-  }
-  .CartBlock {
-    width: 55%;
-    height: 96%;
-    border-radius: 10px;
-    top: 2%;
-    position: fixed;
-    left: 1%;
-    display: inline-block;
-    background-color: rgb(197, 197, 197);
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-  .Information {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 38.2%;
-    height: 96%;
-    top: 2%;
-    left: 58%;
-    z-index: 1;
-  }
-
-  .back {
-    display: inline-block;
-    position: absolute;
-    background-color: silver;
-    border-radius: 10px;
-    width: 41%;
-    height: 90.5%;
-    top: 7.5%;
-    left: 58%;
-  }
-  .CloseBtnCart {
-    font-size: 20px;
-    margin: 1%;
-    float: right;
-    border-radius: 10px;
-    border: 2px solid black;
-    transition: 0.3s ease;
-  }
+.CloseBtnCart {
+  position: absolute;
+  font-size: 20px;
+  top: 5px;
+  right: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: 0.3s ease;
+  z-index: 3;
 }
 .CloseBtnCart:hover {
   transition: 0.3s;
@@ -375,7 +72,77 @@ h3 {
   text-align: center;
   margin-top: 10px;
   font-size: 30px;
-  display: block;
+  top: 0px;
   width: 100%;
   font-weight: bold;
+}
+.Cart {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: fixed;
+  background-color: aliceblue;
+  animation: ani 1s forwards;
+  transform: translateX(200vh);
+  word-wrap: break-word;
+  z-index: 3;
+}
+.CartMod {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: fixed;
+  background-color: aliceblue;
+  animation: ani1 1s forwards;
+  transform: translateX(200vh);
+  word-wrap: break-word;
+  z-index: 3;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.CartBlock {
+  border-radius: 10px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: rgb(197, 197, 197);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.CartList {
+  flex-wrap: wrap;
+  display: flex;
+  align-content: flex-start;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.Information {
+  display: inline-block;
+  position: absolute;
+  background-color: silver;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.back {
+  display: inline-block;
+  position: absolute;
+  background-color: silver;
+  border-radius: 10px;
+}
+@keyframes ani {
+  0% {
+    transform: translateX(200vh);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes ani1 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200vh);
+  }
 }

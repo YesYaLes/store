@@ -1,144 +1,102 @@
 @media (min-width: 200px) {
   .ToolBar {
-    position: fixed;
     width: 20%;
     top: 77px;
-    background-color: rgb(206, 206, 206);
     height: 150vh;
-    z-index: 0;
-    border-right: 2px solid rgb(146, 146, 146);
-    transition: 0.3s ease;
-    z-index: 1;
-  }
-
-  .ToolBar:hover {
-    width: 65%;
-    transition: 0.3s;
   }
   .RangeOfCost {
-    animation: ani11 1s forwards;
-    display: none;
     width: 40%;
     margin: 5px;
   }
   .Val {
     font-size: 12px;
-    text-align: center;
-    animation: ani11 1s forwards;
-    padding: 4px;
     margin: 2%;
-    border-radius: 10px;
-    background-color: azure;
     width: 20%;
-    display: none;
+  }
+  .ToolBar:hover {
+    width: 65%;
+    transition: 0.3s;
   }
 }
 @media (min-width: 700px) {
   .ToolBar {
-    position: fixed;
     width: 15%;
     top: 77px;
-    background-color: rgb(206, 206, 206);
     height: 150vh;
-    z-index: 0;
-    border-right: 2px solid rgb(146, 146, 146);
-    transition: 0.3s ease;
-    z-index: 1;
-  }
-
-  .ToolBar:hover {
-    width: 30%;
-    transition: 0.3s;
   }
   .RangeOfCost {
-    animation: ani11 1s forwards;
-    display: none;
     width: 50%;
     margin: 5px;
   }
   .Val {
     font-size: 12px;
-    text-align: center;
-    animation: ani11 1s forwards;
-    padding: 4px;
     margin: 2%;
-    border-radius: 10px;
-    background-color: azure;
     width: 15%;
-    display: none;
+  }
+  .ToolBar:hover {
+    width: 45%;
+    transition: 0.3s;
   }
 }
 @media (min-width: 1000px) {
   .ToolBar {
-    position: fixed;
     width: 15%;
     top: 77px;
-    background-color: rgb(206, 206, 206);
     height: 150vh;
-    z-index: 0;
-    border-right: 2px solid rgb(146, 146, 146);
-    transition: 0.3s ease;
-    z-index: 1;
-  }
-
-  .ToolBar:hover {
-    width: 30%;
-    transition: 0.3s;
   }
   .RangeOfCost {
-    animation: ani11 1s forwards;
-    display: none;
     width: 50%;
     margin: 5px;
   }
   .Val {
     font-size: 20px;
-    text-align: center;
-    animation: ani11 1s forwards;
-    padding: 4px;
     margin: 2%;
-    border-radius: 10px;
-    background-color: azure;
-    width: 18%;
-    display: none;
+    width: 17%;
+  }
+  .ToolBar:hover {
+    width: 35%;
+    transition: 0.3s;
   }
 }
 @media (min-width: 1400px) {
   .ToolBar {
-    position: fixed;
     width: 10%;
     top: 77px;
-    background-color: rgb(206, 206, 206);
     height: 150vh;
-    z-index: 0;
-    border-right: 2px solid rgb(146, 146, 146);
-    transition: 0.3s ease;
-    z-index: 1;
-  }
-
-  .ToolBar:hover {
-    width: 20%;
-    transition: 0.3s;
   }
   .RangeOfCost {
-    animation: ani11 1s forwards;
-    display: none;
     width: 50%;
     margin: 5px;
   }
   .Val {
     font-size: 15px;
-    text-align: center;
-    animation: ani11 1s forwards;
-    padding: 4px;
     margin: 2%;
-    border-radius: 10px;
-    background-color: azure;
-    width: 3.3vw;
-    display: none;
+  }
+  .ToolBar:hover {
+    width: 25%;
+    transition: 0.3s;
   }
 }
+.ToolBar {
+  position: fixed;
+  background-color: rgb(206, 206, 206);
+  border-right: 2px solid rgb(146, 146, 146);
+  transition: 0.3s ease;
+  z-index: 1;
+}
 
+.RangeOfCost {
+  animation: ani11 1s forwards;
+  display: none;
+}
+.Val {
+  text-align: center;
+  animation: ani11 1s forwards;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: azure;
+  display: none;
+}
 .labelTool {
   margin-top: 10%;
   margin-bottom: 10%;

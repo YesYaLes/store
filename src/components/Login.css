@@ -151,7 +151,7 @@
   float: right;
   border-radius: 10px;
   border: 2px solid black;
-  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 .CloseBtnLog:hover {
   transition: 0.3s;
@@ -207,7 +207,7 @@
   border-radius: 7px;
   border: none;
   background-color: rgb(194, 240, 240);
-  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .ContinueBtn:hover {
@@ -233,7 +233,7 @@
   border-radius: 7px;
   border: none;
   background-color: rgb(194, 240, 240);
-  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .BtnReg:hover {

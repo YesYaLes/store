@@ -1,0 +1,72 @@
+@media (min-width: 200px) {
+  .ItemDetail {
+    flex-direction: column;
+  }
+}
+@media (min-width: 1000px) {
+  .ItemDetail {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.Visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Interaction {
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DetImg {
+  top: 10vh;
+  left: 10%;
+  width: 80%;
+}
+.DetName {
+  display: block;
+  width: 100%;
+  margin-top: 5vh;
+  font-size: 3rem;
+  text-align: center;
+}
+.DetCost {
+  width: 100%;
+  text-align: center;
+  font-size: 2rem;
+}
+.DetBuy {
+  font-size: 2rem;
+  padding: 1vh;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(194, 240, 240);
+  transition: 0.3s ease;
+}
+
+.DetBack {
+  font-size: 2rem;
+  padding: 1vh;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(194, 240, 240);
+  transition: 0.3s ease;
+}
+.ItemDetail {
+  display: flex;
+  width: 100%;
+  position: relative;
+  top: 74px;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+}
+.DetBuy:hover {
+  background-color: rgb(230, 207, 79);
+  transition: 0.3s;
+}
+.DetBack:hover {
+  background-color: rgb(230, 207, 79);
+  transition: 0.3s;
+}

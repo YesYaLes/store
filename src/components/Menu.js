@@ -57,14 +57,17 @@ const Menu = () => {
     <Fragment>
       <div className="Menu">
         <label className="NameLbl">Web Store</label>
-        <input
-          type="text"
-          className="InputMenu"
-          placeholder="I`m looking for...."
-        ></input>
-        <button className="SearchBtn" onClick={Search}>
-          Search
-        </button>
+        <div className="SearchBlck">
+          <input
+            type="text"
+            className="InputMenu"
+            placeholder="I`m looking for...."
+          ></input>
+          <button className="SearchBtn" onClick={Search}>
+            Search
+          </button>
+        </div>
+
         <label className="NumberOfItems">{CartList.length}</label>
         <img
           src={Logged ? pic : prvt}

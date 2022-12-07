@@ -23,14 +23,15 @@ const CartItem = (props) => {
         height="120"
         className="Pic"
       />
-      <h4 className="Cost">{props.Cost} $</h4>
-
-      <img
-        src={trash}
-        alt="Trash"
-        onClick={DeleteFromList}
-        className="DelBtn"
-      />
+      <div className="InfItem">
+        <h4 className="Cost">{props.Cost} $</h4>
+        <img
+          src={trash}
+          alt="Trash"
+          onClick={DeleteFromList}
+          className="DelBtn"
+        />
+      </div>
     </div>
   );
 };

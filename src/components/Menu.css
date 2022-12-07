@@ -1,68 +1,56 @@
 @media (min-width: 200px) {
-  .InputMenu {
-    position: fixed;
-    padding: 3px;
-    margin: 10px;
-    top: 0.3vh;
-    left: 25%;
-    width: 25%;
-    font-size: 13px;
-    border-radius: 5px;
-    border: 2px white;
-    box-shadow: 0px 1px 5px black;
-    outline: 0px;
-  }
-
   .SearchBtn {
-    position: fixed;
-    top: 5.5vh;
-    left: 32%;
-    border: 2px solid rgb(110, 168, 168);
-    border-radius: 20px;
     font-size: 15px;
-    background-color: azure;
-    -webkit-transition: 0.3s ease;
   }
   .NameLbl {
-    position: fixed;
-    top: 4%;
+    top: 25px;
     margin-left: 3%;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .SearchBlck {
+    flex-direction: column;
+    align-items: center;
+    left: 30%;
+    top: 5%;
+    width: 25%;
   }
 }
-@media (min-width: 700px) {
-  .InputMenu {
-    position: fixed;
-    top: 1.5%;
-    left: 40%;
-    padding: 3px;
-    margin: 10px;
-    width: 20%;
-    font-size: 20px;
-    border-radius: 5px;
-    border: 2px white;
-    box-shadow: 0px 1px 5px black;
-    outline: 0px;
-  }
-
-  .SearchBtn {
-    position: fixed;
-    top: 2.5%;
-    left: 65%;
-    border: 2px solid rgb(110, 168, 168);
-    border-radius: 20px;
-    font-size: 20px;
-    background-color: azure;
-    -webkit-transition: 0.3s ease;
-  }
+@media (min-width: 800px) {
   .NameLbl {
-    position: fixed;
     top: 2%;
     margin-left: 1%;
     font-size: 2rem;
-    font-weight: bold;
   }
+  .SearchBlck {
+    flex-direction: column;
+    align-items: center;
+  }
+  .SearchBlck {
+    flex-direction: row;
+    left: 27%;
+    top: 20%;
+    width: 35%;
+  }
+}
+.InputMenu {
+  width: 90%;
+  padding: 3px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 2px white;
+  box-shadow: 0px 1px 5px black;
+  outline: 0px;
+}
+
+.SearchBtn {
+  border: 2px solid rgb(110, 168, 168);
+  border-radius: 20px;
+  background-color: azure;
+  transition: 0.3s ease;
+}
+.NameLbl {
+  position: fixed;
+  font-weight: bold;
 }
 .Menu {
   position: fixed;
@@ -124,4 +112,8 @@ h1 {
 .PrvtOff:hover {
   background-color: rgb(230, 207, 79);
   transition: 0.3s;
+}
+.SearchBlck {
+  display: flex;
+  position: absolute;
 }

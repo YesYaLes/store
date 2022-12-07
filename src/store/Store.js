@@ -67,6 +67,7 @@ const StoreReducer = (
     IsLoged: false,
     RegInProcess: false,
     Pic: null,
+    CurItem: {},
   },
   action
 ) => {
@@ -106,6 +107,9 @@ const StoreReducer = (
     }
     case "PushToAuthData": {
       return { ...state, AuthData: [...state.AuthData, action.memb] };
+    }
+    case "PushToCurItem": {
+      return { ...state, CurItem: action.value };
     }
     default:
       return state;
